@@ -14,4 +14,16 @@ class DayCell: UICollectionViewCell {
     @IBOutlet weak var temperatureLbl: UILabel!
     @IBOutlet weak var dayLbl: UILabel!
     
+    private var _weather: Weather!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    func configureCell(weather: Weather) {
+        _weather = weather
+        
+        
+    }
+    
 }
